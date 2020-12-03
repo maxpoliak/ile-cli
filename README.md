@@ -38,3 +38,5 @@ industrial
 Integrate it into your project as a submodule. Use this to create a
 complex management plane for your application with many branches and
 command tree nodes.
+
+Build and run a small Linux application [demo](demo/README.md) to test the interface.
