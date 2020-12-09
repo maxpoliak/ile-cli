@@ -509,14 +509,6 @@ static void cli_vterm_escape_proc(unsigned short escape, int *status)
 }
 
 /*
- * cli_vterm_exit()
- */
-int cli_vterm_exit(void)
-{
-	exit(0);
-}
-
-/*
  * cli_vterm_init()
  * @op
  */
@@ -576,7 +568,6 @@ void cli_vterm_char_proc(void)
 			break;
 
 		case ILE_CLI_CMD_KEY_ETX:
-			cli_vterm_exit();
 			break;
 
 		case ILE_CLI_CMD_KEY_HT:
