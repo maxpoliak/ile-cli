@@ -424,7 +424,7 @@ const char* ile_cli_cmd_candidate_completion(
  * @argv         : command line arguments
  * @node_counter : node counter in current branch
  */
-int ile_cli_cmd_tree_branch_exe(const unsigned int argc, char **const argv, unsigned int *node_counter)
+int ile_cli_cmd_tree_branch_exe(const int argc, char **const argv, unsigned int *node_counter)
 {
 	struct ile_command_node *exec_node = ile_cli_cmd_lookup_tree(argc, argv, node_counter, LOOKUP_ALL);
 	if (exec_node->exec && *node_counter == argc) {

@@ -13,7 +13,7 @@ typedef struct ile_cmd_candidates_attr {
 	unsigned int common_length;
 } ile_cmd_candidates_attr;
 
-int ile_cli_cmd_tree_branch_exe(const unsigned int argc, char **const argv, unsigned int *node_counter);
+int ile_cli_cmd_tree_branch_exe(const int argc, char **const argv, unsigned int *node_counter);
 void ile_cli_cmd_root_grp_info_show(void);
 void ile_cli_cmd_candidate_lookup(const int argc, char **const argv, int whitespace);
 const char* ile_cli_cmd_candidate_completion(const int argc, char **const argv, struct ile_cmd_candidates_attr *candidates_attr, int whitespace);
