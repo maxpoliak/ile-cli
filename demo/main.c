@@ -28,6 +28,15 @@ static int my_test_exec(node_t self, const int argc, char **const argv)
 }
 
 /*
+ * demo_exit_exec()
+ */
+static int demo_exit_exec(node_t self, const int argc, char **const argv)
+{
+	exit(0);
+	return 0;
+}
+
+/*
  * ile_cli_cmd_tree_build()
  */
 int ile_cli_cmd_tree_build(void)
@@ -41,8 +50,13 @@ int ile_cli_cmd_tree_build(void)
 	}
 	if (!node)
 		return -1;
-	else
-		return 0;
+
+	node = ile_cli_cmd_exec_node_add(root, "exit", "Enter to exit the demo program",
+	                                 demo_exit_exec);
+	if (!node)
+		return -1;
+
+	return 0;
 }
 
 /*
