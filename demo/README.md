@@ -7,14 +7,17 @@ that demonstrates the functionality of the user interface.
 (linux shell)$ make
 (linux shell)$ ./demo
 
-(ile-cli) > ?
-```
-
-Hello world:
-```
 (ile-cli) > echo hello world
+
 hello world
-(ile-cli) >
+
+(ile-cli) > ?
+line                         Console configuration
+debug                        Debug configuration
+echo                         Echo
+exit                         Enter to exit the demo program
+
+        *  *  *  *  *  *  *  *  *  *  *  *  *  *
 ```
 
 Banner configuration:
@@ -44,6 +47,13 @@ the "up" and "down" keys, or see all entries:
 2 : line banner name (demo)
 
 (demo) >
+```
+
+Execute the command from the Linux shell:
+```
+(linux shell)$ ./demo -C "echo hello world"
+
+hello world
 ```
 
 Use this example to create a lightweight and complex interface for
