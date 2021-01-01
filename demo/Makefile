@@ -3,8 +3,9 @@ CFLAGS= -Wall -O -Wmaybe-uninitialized -I../includes -I.
 CLEAN = rm
 
 TARGET = demo
-SRCDIR = ..
-OBJECTS	= $(patsubst %.c,%.o,$(wildcard $(SRCDIR)/*.c)) main.o
+SRCDIR = ../src
+OBJDIR = $(SRCDIR)
+OBJECTS = $(patsubst %.c,%.o,$(wildcard $(SRCDIR)/*.c)) main.o
 
 
 $(TARGET): $(OBJECTS) $(LIBRARY)
@@ -14,4 +15,4 @@ $(TARGET): $(OBJECTS) $(LIBRARY)
 	$(CC) -c $(CFLAGS) $< -o $@
 
 clean:
-	$(CLEAN) -f *.o ../*.o $(TARGET)
+	$(CLEAN) -f *.o $(OBJDIR)/*.o $(TARGET)
