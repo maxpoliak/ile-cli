@@ -2,7 +2,7 @@
 
 ![][logo]
 
-[logo]: demo/logo.png
+[logo]: ./logo.png
 
 Console user interface for MCU, RTOS, and C applications with tab
 completions for each of the command tree nodes.
