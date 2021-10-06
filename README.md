@@ -7,7 +7,7 @@
 Console user interface for MCU, RTOS, and C applications with tab
 completions for each of the command tree nodes.
 
-![demonstration](demo/demonstration.gif)
+![demonstration](https://raw.githubusercontent.com/maxpoliak/resources/master/ile-cli/demonstration.gif)
 
 Integrate it into your project as a submodule. Use this to create a
 complex management plane for your application with many branches and
